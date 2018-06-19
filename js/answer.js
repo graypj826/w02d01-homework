@@ -148,6 +148,8 @@ const bondFilms = [
 ];
 //Yikes. Well, copy the bondFilms array of objects above into your js file. Use for loops and conditionals and methods in order to complete the below:
 
+
+//5th Commit
 //Create a new array called bondTitles with only the titles of the Bond films, and console.log the new array.
 let bondTitles = []
 for (let key in bondFilms) {
@@ -157,6 +159,9 @@ for (let key in bondFilms) {
 
 console.log(bondTitles);
 
+//Create a new array oddBonds, of only the Bond films released on odd-numbered years.
+
+//6tn Commit
 let oddBonds = []
 for (let key in bondFilms) {
 	if(bondFilms[key].year % 2 !== 0)
@@ -164,5 +169,32 @@ for (let key in bondFilms) {
 }
 
 console.log(oddBonds)
+
+//7th commit
+// Determine the total cumulative gross of the Bond franchise, and console.log the result. hint To make the grosses into usable numbers, look into the .replace Javascript method (there are many ways to do this, however). Look into parseInt also.
+
+
+let gross = 0
+let convertGross = 0
+for (let key in bondFilms){
+	convertGross = bondFilms[key].gross.replace(/[$,]+/g,"")
+	console.log(convertGross);
+	convertGrossInt = parseInt(convertGross, 10);
+	console.log(convertGrossInt);	
+	gross += parseInt(convertGross, 10)
+}
+
+console.log(gross);
+
+
+
+
+
+
+
+
+
+
+
 
 
