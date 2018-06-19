@@ -40,7 +40,9 @@ const patrickGray = {
 
 console.log(patrickGray);
 
-// Write code that will access your hobby from the object that you just created.
+// Write code that will access your hobby from the object that you just created.\
+
+//git 3 -- 
 
 console.log(patrickGray.hobby);
 
@@ -89,8 +91,32 @@ console.log(crazyObject.larry.characters[1].name);
 
 
 
+//commit 4 
 
+//With the following object:
 
+const inception = {
+   reality: {
+       dreamLayer1: {
+           dreamLayer2: {
+               dreamLayer3: {
+                   dreamLayer4: {
+                       dreamLayer5: {
+                           dreamLayer6: {
+                               limbo: "Joseph Gordon Levitt"
+                          }
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
+//Change the value of limbo to null.
+
+inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = null
+
+console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo)
 
 
 
