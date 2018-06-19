@@ -157,9 +157,12 @@ for (let key in bondFilms) {
 
 console.log(bondTitles);
 
+let oddBonds = []
+for (let key in bondFilms) {
+	if(bondFilms[key].year % 2 !== 0)
+	oddBonds.push(bondFilms[key])
+}
 
-
-
-
+console.log(oddBonds)
 
 
